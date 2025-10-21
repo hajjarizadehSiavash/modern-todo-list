@@ -1,4 +1,4 @@
-![Project Preview](./preview.png)
+![Project Preview](./preview.png.png)
 # 📝 Modern To-Do List (React + Vite)
 
 A beautifully designed and fully functional **To-Do List Application** built with **React**, styled with **modern CSS gradients**, and powered by **Vite** for blazing-fast performance.
