@@ -1,3 +1,4 @@
+![Project Preview](./preview.png)
 # 📝 Modern To-Do List (React + Vite)
 
 A beautifully designed and fully functional **To-Do List Application** built with **React**, styled with **modern CSS gradients**, and powered by **Vite** for blazing-fast performance.
@@ -52,4 +53,4 @@ npm run dev
 
 ---
 
-⭐ If you like this project, please give it a star on GitHub! 🌟  
+⭐ If you like this project, please give it a star on GitHub! 🌟
