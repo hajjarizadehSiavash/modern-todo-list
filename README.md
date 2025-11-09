@@ -1,12 +1,56 @@
-# React + Vite
+![Project Preview](./preview.png.png)
+# 📝 Modern To-Do List (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A beautifully designed and fully functional **To-Do List Application** built with **React**, styled with **modern CSS gradients**, and powered by **Vite** for blazing-fast performance.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
+✅ Add, complete, and delete tasks easily  
+💾 Save tasks in local storage (persistence even after refresh)  
+🎨 Responsive modern UI with elegant colors  
+🧩 Clean and well-structured React components  
+⚡ Built with Vite for high-speed development  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Technologies Used
+- ⚛️ **React (Hooks, Components, JSX)**
+- ⚡ **Vite (Modern Build Tool)**
+- 🎨 **CSS (custom gradients + Flexbox)**
+- 💾 **LocalStorage API**
+
+---
+
+## 🌈 Preview
+![App Screenshot](https://via.placeholder.com/800x400?text=Modern+To-Do+List+Preview)
+
+---
+
+## 🚀 Installation
+
+```bash
+# Clone this repository
+git clone https://github.com/hajjarizadehSiavash/modern-todo-list.git
+
+# Navigate into the folder
+cd modern-todo-list
+
+# Install dependencies
+npm install
+
+# Run the app locally
+npm run dev
+
+---
+
+## 👨‍💻 Author  
+
+**Siavash Hajjarizadeh**  
+💼 Frontend Developer | React Enthusiast  
+📍 Based in Germany 🇩🇪  
+✉️ Contact: [developersiavash@gmail.com]  
+
+---
+
+⭐ If you like this project, please give it a star on GitHub! 🌟
