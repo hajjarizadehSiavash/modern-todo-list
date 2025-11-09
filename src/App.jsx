@@ -48,9 +48,12 @@ function App() {
       </form>
 
       <ul className="task-list">
-        <button type="button" className="clear-all-btn" onClick={clearAll}>
-          Delete All
-        </button>
+        {tasks.length > 1 && (
+          <button type="button" className="clear-all-btn" onClick={clearAll}>
+            Delete All
+          </button>
+        )
+        }
 
         {tasks.map((task, index) => (
           <li
