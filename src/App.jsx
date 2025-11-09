@@ -80,7 +80,7 @@ function App() {
       </ul>
       <footer className="footer">© 2025 Modern-ToDo-List</footer>
 
-      
+
     </div>
   );
 }
