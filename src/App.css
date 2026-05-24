@@ -1,273 +1,87 @@
-/* =========================================
-   COHESIVE VIOLET–PERIWINKLE PALETTE (Bright)
-   Inspired by your image
-   ========================================= */
-
-/* پالت از چپ به راست (عکس): Violet • Lavender • Lilac • Cream • Periwinkle */
-:root{
-  --violet:     #B77AD9;   /* بنفش متوسط */
-  --lavender:   #CFA7F5;   /* اسطوخودوس روشن‌تر */
-  --lilac:      #E6D7F9;   /* یاسی خیلی لطیف */
-  --cream:      #F7F3D7;   /* کرم روشن */
-  --periwinkle: #6F85E6;   /* آبی پری‌وینکل */
-  --indigo:     #4C63D9;   /* ایندگو مکمل پری‌وینکل */
-
-  --surface:    #FFFFFF;
-  --surface-2:  rgba(255,255,255,.72);
-  --text:       #131523;     /* تقریبا مشکی خنثی */
-  --muted:      #5F647A;     /* خاکستری-بنفش */
-
-  --ring:       rgba(207,167,245,.30);  /* فوکِس به رنگ Lavender */
-  --shadow-s:   0 8px 18px rgba(19,21,35,.08);
-  --shadow-m:   0 16px 36px rgba(19,21,35,.12);
-
-  --radius:     16px;
-  --radius-sm:  12px;
-}
-
-/* ---------- صفحه با مش‌های لطیف هم‌خانواده ---------- */
-*{ box-sizing: border-box; }
 body {
+  background-color: #f5f1e8;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(145deg, #f4eaff, #ece3ff, #f7f2ff);
-  background-attachment: fixed;
-  background-size: cover;
-  color: #2e2e2e;
-  padding: 60px 20px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  padding-top:60px;
   min-height: 100vh;
+  overflow: hidden;
+  background-image: url(../public/background-image.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.todo-container {
+  background-color: #A8C9A3;
+  width: 400px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+}
+button {
+  padding: 10px;
+  background-color: #C58940;
+  border: none;
+  cursor: pointer;
+}
+input {
+  padding: 10px;
+  border-radius: 8px;
+}
+.input-section {
+  display: flex;
+  gap: 10px;
 }
 
-
-/* ---------- پنل شیشه‌ای روشن ---------- */
-.todo-container {
-  width: 100%;
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 32px 28px;
-  border-radius: 22px;
-  background: linear-gradient(145deg, #f6f3ff, #ece6ff);
-  border: 1px solid rgba(160, 140, 210, 0.3);
-  backdrop-filter: blur(10px);
-  box-shadow:
-    0 10px 20px rgba(60, 40, 120, 0.08),
-    0 4px 10px rgba(80, 60, 140, 0.1),
-    inset 0 1px 3px rgba(255, 255, 255, 0.3);
+.input-section input {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+}
+.input-section button {
+  padding: 12px 20px;
+  font-size: 16px;
+}
+.actions button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 8px; 
+}
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+.actions button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  color:#6b4f3a;
   text-align: center;
 }
 
-
-.todo-container::before{
-  content:"";
-  position:absolute; inset:-1px;
-  border-radius: calc(var(--radius) + 2px);
-  pointer-events:none;
-  background:
-    linear-gradient(90deg, rgba(183,122,217,.28), rgba(207,167,245,.28), rgba(111,133,230,.28));
-  filter: blur(18px);
-  opacity:.26;
+li {
+  color: #6b4f3a;
+  font-size: 30px;
 }
+button {
+  color: #C58940;
+  background-color:blanchedalmond ;
+  border-radius: 10px;
 
-/* ---------- تیتر با گرادیانت هم‌خانواده ---------- */
-.title {
-  margin: 0 0 18px;
-  text-align: center;
-  font-weight: 800;
-  font-size: 2.2rem;
-  letter-spacing: 0.4px;
-
-  /* 👇 گرادیانت سرمه‌ای بلوری لوکس */
-  background: linear-gradient(
-    90deg,
-    rgba(10, 22, 61, 0.95) 0%,   /* سرمه‌ای عمیق */
-    rgba(30, 45, 90, 0.85) 45%,  /* سرمه‌ای شفاف‌تر */
-    rgba(100, 120, 180, 0.75) 100% /* آبی تیره بلور مانند */
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-
-  text-shadow: 0 2px 8px rgba(10, 20, 60, 0.2);
-}
-
-.title::after {
-  content: "";
-  display: block;
-  width: 110px;
-  height: 3px;
-  margin: 12px auto 0;
-  border-radius: 3px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(10, 22, 61, 0.6),
-    rgba(100, 120, 180, 0.4),
-    transparent
-  );
-  opacity: 0.9;
-}
-
-
-/* ---------- فرم ---------- */
-.input-section{ display:flex; gap:12px; margin-bottom:22px; }
-
-.input-section input{
-  flex:1; padding:14px 16px;
-  border:1px solid rgba(111,133,230,.22);
-  border-radius: var(--radius-sm);
-  background:#fff;
-  color:var(--text);
-  font-size:1rem;
-  box-shadow: var(--shadow-s);
-  outline:none;
-  transition: box-shadow .18s, border-color .18s, background .18s;
-}
-.input-section input::placeholder{ color:#8B90A8; }
-.input-section input:focus{
-  border-color: var(--lavender);
-  box-shadow: 0 0 0 4px var(--ring), var(--shadow-m);
-}
-
-/* دکمه Add با گرادیانت پری‌وینکل → لاوندر */
-.input-section button{
-  padding:14px 18px; border:none; border-radius: var(--radius-sm);
-  font-weight:800; letter-spacing:.3px; color:#0c1022;
-  background: linear-gradient(135deg, var(--lilac), var(--lavender));
-  cursor:pointer; box-shadow: 0 10px 24px rgba(207,167,245,.26);
-  transition: transform .14s, filter .2s, box-shadow .2s;
-}
-.input-section button:hover{ transform: translateY(-1px); filter: brightness(1.06); }
-.input-section button:focus-visible{ outline:none; box-shadow: 0 0 0 4px var(--ring); }
-
-/* ---------- لیست ---------- */
-.task-list{ list-style:none; margin:0 0 16px; padding:0; display:grid; gap:12px; }
-
-.task-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 14px 16px;
-  border-radius: 14px;
-  
-  /* 👇 این رنگ جدید داخل کارت‌هاست */
-  background: #F3EBD9; /* شیری گرم و کمی تیره‌تر برای دید بهتر */
-  
-  border: 1px solid rgba(111,133,230,.16);
-  box-shadow: var(--shadow-s);
-  transition: transform .12s, box-shadow .18s, border-color .18s, background .18s;
-}
-.task-item:hover {
-  transform: translateY(-1px);
-  background: #F5EEDC; /* وقتی موس روش می‌ره، یک درجه روشن‌تر */
-  border-color: rgba(111,133,230,.28);
-  box-shadow: 0 12px 30px rgba(19,21,35,.12);
-}
-
-.task-item.completed span{
-  text-decoration: line-through;
-  color:#6b7280; opacity:.85;
-}
-
-/* ---------- اکشن‌ها (هم‌خانواده) ---------- */
-.actions{ display:flex; gap:8px; }
-.actions button{
-  width:44px; height:44px; border-radius:12px; border:none;
-  display:inline-flex; align-items:center; justify-content:center;
-  color:#fff; cursor:pointer;
-  transition: transform .12s, filter .2s, box-shadow .2s;
-}
-
-/* Complete: ایندگو → ویولت (هم‌خانواده) */
-.complete-btn{
-  background: linear-gradient(135deg, var(--indigo), var(--violet));
-  box-shadow: 0 8px 18px rgba(76,99,217,.25);
-}
-.complete-btn:hover{ transform: translateY(-1px); filter: brightness(1.06); }
-
-/* Delete: رز/ماژنتای نزدیک به ویولت (آنالوگ) */
-.delete-btn{
-  background: linear-gradient(135deg, #F5D0FE, #E879F9, var(--lavender));
-  box-shadow: 0 8px 18px rgba(232,121,249,.24);
-}
-.delete-btn:hover{ transform: translateY(-1px); filter: brightness(1.07); }
-
-/* فوکِس برای دسترس‌پذیری */
-.input-section button:focus-visible,
-.actions button:focus-visible,
-.clear-all-btn:focus-visible{
-  outline:none; box-shadow: 0 0 0 4px var(--ring);
-}
-
-/* ---------- فوتر ---------- */
-.footer{
-  display:flex; align-items:center; justify-content:space-between;
-  gap:12px; margin-top:6px;
-}
-.footer .count{ color: var(--muted); font-weight:700; letter-spacing:.35px; }
-
-/* Delete All: روشن ولی هم‌خانواده (magenta→lavender) */
-.clear-all-btn{
-  padding:12px 16px; border:none; border-radius:12px;
-  font-weight:900; letter-spacing:.35px; color:#fff;
-  background: linear-gradient(135deg, #f8e7ff, #e7a9fb, #cfa7f5);
-  box-shadow: 0 10px 24px rgba(207,167,245,.28);
-  cursor:pointer; transition: transform .14s, filter .2s, box-shadow .2s;
-}
-.clear-all-btn:hover{ transform: translateY(-1px); filter: brightness(1.08); }
-.clear-all-btn:disabled{ opacity:.5; cursor:not-allowed; box-shadow:none; }
-
-/* ---------- Motion & Responsive ---------- */
-@media (prefers-reduced-motion: reduce){ *{ transition:none !important; } }
-@media (max-width:560px){
-  .todo-container{ padding:20px; }
-  .title{ font-size:1.9rem; }
-  .actions button{ width:40px; height:40px; }
 }
 .task-item {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  gap: 12px;
-  padding: 14px 16px;
-  border-radius: 14px;
-
-  /* 👇 رنگ شیری بسیار روشن و لوکس */
-  background: #FCF9F1; /* شیری خیلی روشن و طبیعی */
-  
-  border: 1px solid rgba(111,133,230,.12);
-  box-shadow: var(--shadow-s);
-  transition: transform .12s, box-shadow .18s, border-color .18s, background .18s;
+  align-items: center;
 }
-
-/* 👇 افکت لطیف هنگام هاور */
-.task-item:hover {
-  transform: translateY(-1px);
-  background: linear-gradient(
-    135deg,
-    #FEFCF7 40%,   /* شیری فوق‌العاده روشن */
-    #ECE8FB 100%   /* پری‌وینکل خیلی لطیف برای درخشش */
-  );
-  border-color: rgba(111,133,230,.22);
-  box-shadow: 0 12px 30px rgba(19,21,35,.1);
-}
-
-
-.todo-container {
-  width: min(760px, 100%);
-  margin: 0 auto;
-  padding: 28px;
-  border-radius: var(--radius);
-
-  /* 👇 رنگ مکمل زیبا برای بدنه‌ی اصلی */
-  background: #EAE8FA; /* Soft Periwinkle Cream */
-  
-  border: 1px solid rgba(111,133,230,.22);
-  backdrop-filter: blur(12px);
-  box-shadow: 0 12px 30px rgba(19,21,35,.08);
-  position: relative;
-  overflow: clip;
+.clear-all-btn {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

@@ -35,7 +35,7 @@ function App() {
 
   return (
     <div className="todo-container">
-      <h1 className="title">Modern-ToDo-List</h1>
+      <h1 className="title">ToDo-List</h1>
 
       <form className="input-section" onSubmit={handleSubmit}>
         <input
@@ -81,7 +81,7 @@ function App() {
           </li>
         ))}
       </ul>
-      <footer className="footer">© 2025 Modern-ToDo-List</footer>
+      <footer className="footer">© 2025 ToDo-List</footer>
 
 
     </div>
