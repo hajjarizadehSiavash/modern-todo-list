@@ -46,6 +46,7 @@ function App() {
         />
         <button type="submit">Add</button>
       </form>
+      <p className="task-text">Green Tasks 🍀</p>
 
       <ul className="task-list">
         {tasks.length > 1 && (

@@ -14,9 +14,10 @@ body {
 }
 .todo-container {
   background-color: #A8C9A3;
-  width: 400px;
+  width: 650px;
   padding: 30px;
   border-radius: 20px;
+  backdrop-filter: blur(80px);
   box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
 }
 button {
@@ -28,6 +29,7 @@ button {
 input {
   padding: 10px;
   border-radius: 8px;
+  height: 20px;
 }
 .input-section {
   display: flex;
@@ -64,11 +66,13 @@ input {
 h1 {
   color:#6b4f3a;
   text-align: center;
+  font-size: 50px;
+
 }
 
 li {
   color: #6b4f3a;
-  font-size: 30px;
+  font-size: 32px;
 }
 button {
   color: #C58940;
@@ -84,4 +88,11 @@ button {
 .clear-all-btn {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+.task-text {
+  text-align: center;
+  font-size: 23px;
+  color: #5b4636;
+  margin-top: 20px;
+  font-weight: 500;
 }
