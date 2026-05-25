@@ -4,26 +4,27 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding-top:60px;
   min-height: 100vh;
   overflow: hidden;
-  background-image: url("/green-forest.jpg");
+  background-image: url("/public/preview.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .todo-container {
-  background-color: #A8C9A3;
+  background-color: #a8c9a3;
   width: 550px;
   max-width: 500px;
   padding: 35px;
+  padding-top: 60px;
+  margin: 140px;
   border-radius: 20px;
   backdrop-filter: blur(80px);
   box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
 }
 button {
   padding: 10px;
-  background-color: #C58940;
+  background-color: #c58940;
   border: none;
   cursor: pointer;
 }
@@ -52,7 +53,7 @@ input {
   border: none;
   font-size: 20px;
   cursor: pointer;
-  border-radius: 8px; 
+  border-radius: 8px;
 }
 .actions {
   display: flex;
@@ -65,10 +66,9 @@ input {
   align-items: center;
 }
 h1 {
-  color:#6b4f3a;
+  color: #6b4f3a;
   text-align: center;
   font-size: 50px;
-
 }
 
 li {
@@ -76,10 +76,9 @@ li {
   font-size: 32px;
 }
 button {
-  color: #C58940;
-  background-color:blanchedalmond ;
+  color: #c58940;
+  background-color: blanchedalmond;
   border-radius: 10px;
-
 }
 .task-item {
   display: flex;
